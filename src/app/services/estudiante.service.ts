@@ -8,13 +8,13 @@ import { Estudiante } from '../interfaces/estudiante';
 export class EstudianteService {
 
   public estudiantes: Estudiante[] = [];
-  private serviceUrl:string='http://localhost:3000';
+  private serviceUrl:string='http://localhost:3001';
 
   constructor(private http:HttpClient) {}
 
   public listarEstudiantes():void{
     console.log('buscar')
-    this.http.get('http://localhost:3000/estudiantes')
+    this.http.get('http://localhost:3001/estudiantes')
     .subscribe(
       resp => {
         console.log(resp);

@@ -1,8 +1,24 @@
-<h1>login</h1>
-<form action="" (ngSubmit)="login()">
-  <label for="correro">correo</label>
-  <input type="text" name="correo" id="correo" placeholder="correo..." [(ngModel)]="correo">
-  <label for="password">password</label>
-  <input type="password" name="pass" id="pass" [(ngModel)]="password">
-  <button type="submit">login</button>
-</form>
+<div class="row mt-5">
+  <div class="col-lg-3 col-sm-3 col-md-3 col-3">
+  </div>
+  <div class="col-lg-6 col-sm-12 col-md-6 col-12 p-5">
+    <form action="" (ngSubmit)="login()">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="correo" id="correo" aria-describedby="emailHelp" [(ngModel)]="correo">
+        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" name="pass" id="pass" [(ngModel)]="password">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <div class="col-lg-3 col-sm-3 col-md-3 col-3">
+  </div>
+</div>

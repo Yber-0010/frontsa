@@ -13,6 +13,7 @@ import { AuthComponent } from './pages/auth/auth.component';
 import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './pages/colegio/dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AsideComponent } from './pages/colegio/aside/aside.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     WelcomeComponent,
     NavbarComponent,
     AuthComponent,
-    DashboardComponent
+    DashboardComponent,
+    AsideComponent
   ],
   imports: [
     BrowserModule,

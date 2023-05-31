@@ -1,0 +1,25 @@
+<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+  <div class="sb-sidenav-menu">
+      <div class="nav">
+          <div class="sb-sidenav-menu-heading">Administracion</div>
+          <a class="nav-link" routerLink="/dashboard" (click)="refreshPage()">
+              <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+              Dashboard
+          </a>
+          <a class="nav-link" routerLink="/director" (click)="refreshPage()">
+              <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+              Administración
+          </a>
+          <div class="sb-sidenav-menu-heading">Docentes</div>
+          <a class="nav-link" routerLink="/maestros" (click)="refreshPage()">
+              <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+              Maestros
+          </a>
+          <div class="sb-sidenav-menu-heading">Alumnado</div>
+          <a class="nav-link" routerLink="/estudiantes" (click)="refreshPage()">
+              <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+              Alumnos
+          </a>
+      </div>
+  </div>
+</nav>

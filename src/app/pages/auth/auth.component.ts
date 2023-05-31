@@ -14,7 +14,7 @@ export class AuthComponent {
   constructor(private router: Router) {}
 
   login():void{
-    if(this.correo !== 'iber@gmail.com' && this.password !== "123456" ) return alert('invalido')
+    if(this.correo !== 'iber@gmail.com' || this.password !== "123456" ) return alert('invalido')
     this.router.navigate(['/dashboard']);
   }
 
